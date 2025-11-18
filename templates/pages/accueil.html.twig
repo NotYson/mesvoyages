@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}
-        <h1>Page d'accueil</h1>
-        {% endblock %}</title>
+{% extends "basefront.html.twig" %}
 
-        {% block body %}
-        <h1>Page d'accueil</h1>
-        <a href="{{ path('voyages') }}"> voyages</a>
-        {% endblock %}
+{% block title %}Accueil{% endblock %}
 
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org
+{% block body %}
+    <h1>Page d'accueil</h1>
+    <p>Bienvenue sur mon site Mes Voyages.</p>
+{% endblock %}
