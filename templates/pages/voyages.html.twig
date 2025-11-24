@@ -6,7 +6,11 @@
     <table class="table table-striped">
         <thead>
             <tr>
-                <th class="text-left" scope="col">Ville</th>
+                <th class="text-left" scope="col">
+                    Ville 
+                    <a href="{{ path('voyages.sort', {champ:'ville', ordre:'ASC'}) }}" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">&lt;</a>
+                    <a href="{{ path('voyages.sort', {champ:'ville', ordre:'DESC'}) }}" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">&gt;</a>
+                </th>
                 <th class="text-left" scope="col">Pays</th>
                 <th class="text-end" scope="col">Note</th>
                 <th class="text-center" scope="col">Date</th>
