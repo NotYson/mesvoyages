@@ -26,13 +26,9 @@
                     {{ visite.datecreationString }}
                 </td>
                 <td>
-                    <a href="#" class="btn btn-secondary">Éditer</a>
+                    <a href="{{ path('admin.voyage.edit', {id:visite.id}) }}" class="btn btn-secondary">Éditer</a>
 
-                    <a href="{{ path('admin.voyage.suppr', {id:visite.id}) }}"
-                       class="btn btn-danger"
-                       onclick="return confirm('Êtes-vous sûr de vouloir supprimer {{ visite.ville }} ?')">
-                        Supprimer
-                    </a>
+                    <a href="{{ path('admin.voyage.suppr', {id:visite.id}) }}" class="btn btn-danger" onclick="return confirm('Êtes-vous sûr de vouloir supprimer {{ visite.ville }} ?')"> Supprimer </a>
                 </td>
             </tr>
         {% endfor %}
