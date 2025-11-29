@@ -9,6 +9,20 @@
     <div class="text-center">
         <h1>Gestion des voyages</h1>
     </div>
+    <!-- menu -->
+        <nav class="navbar navbar-light bg-light mt-3">
+            <ul class="navbar-nav flex-row">
+
+                <li class="nav-item me-3">
+                    <a class="nav-link" href="{{ path('admin.voyages') }}">Accueil</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('admin.environnements') }}">Environnement</a>
+                </li>
+
+            </ul>
+        </nav>
 </div>
 {% endblock %}
 
